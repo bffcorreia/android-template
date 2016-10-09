@@ -15,13 +15,11 @@ public abstract class BaseView extends FrameLayout {
   private ViewComponent viewComponent;
 
   public BaseView(Context context) {
-    super(context);
-    init();
+    this(context, null);
   }
 
   public BaseView(Context context, AttributeSet attrs) {
-    super(context, attrs);
-    init();
+    this(context, attrs, 0);
   }
 
   public BaseView(Context context, AttributeSet attrs, int defStyleAttr) {

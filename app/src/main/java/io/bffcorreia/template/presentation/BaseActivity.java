@@ -23,9 +23,9 @@ public abstract class BaseActivity extends AppCompatActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(getLayoutRes());
     initActivityComponent();
     initializeInjector();
+    setContentView(getLayoutRes());
     ButterKnife.bind(this);
     setupToolbar();
   }
